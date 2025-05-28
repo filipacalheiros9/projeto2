@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ListarProjetosController"
+      spacing="10" style="-fx-padding: 20;">
+
+    <TableView fx:id="projetosTable" prefHeight="300" prefWidth="700">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colTema" text="Tema" prefWidth="150"/>
+            <TableColumn fx:id="colTipoLetra" text="Tipo Letra" prefWidth="100"/>
+            <TableColumn fx:id="colTamanho" text="Tamanho" prefWidth="80"/>
+            <TableColumn fx:id="colCores" text="Cores" prefWidth="100"/>
+            <TableColumn fx:id="colCliente" text="Cliente" prefWidth="150"/>
+            <TableColumn fx:id="colTipoProjeto" text="Tipo Projeto" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+
+    <Button text="Fechar" onAction="#fecharJanela" style="-fx-padding: 6 12; -fx-background-color: #e74c3c; -fx-text-fill: white;" />
+</VBox>

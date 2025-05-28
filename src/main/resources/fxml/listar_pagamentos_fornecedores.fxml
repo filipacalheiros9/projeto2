@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ListarPagamentosFornecedoresController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Lista de Pagamentos de Fornecedores" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="pagamentosTable" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="fornecedorCol" text="Fornecedor" prefWidth="150"/>
+            <TableColumn fx:id="valorCol" text="Valor" prefWidth="100"/>
+            <TableColumn fx:id="dataFaturaCol" text="Data da Fatura" prefWidth="100"/>
+            <TableColumn fx:id="dataPagamentoCol" text="Data de Pagamento" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <!-- Botão para fechar a janela -->
+    <Button text="Fechar" onAction="#handleFechar"
+            style="-fx-padding: 6 12; -fx-background-color: #e74c3c; -fx-text-fill: white;" />
+</VBox>

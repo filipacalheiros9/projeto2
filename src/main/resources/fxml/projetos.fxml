@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ProjetosController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Projetos" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Adicionar Tipo Projeto"
+            onAction="#handleAdicionarTipoProjeto"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Remover Tipo Projeto"
+            onAction="#handleRemoverTipoProjeto"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Tipos Projetos"
+            onAction="#handleListarTiposProjetos"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Adicionar Tipo Impressão"
+            onAction="#handleAdicionarTipoImpressao"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Remover Tipo Impressão"
+            onAction="#handleRemoverTipoImpressao"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Tipos Impressões"
+            onAction="#handleListarTiposImpressoes"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+</VBox>

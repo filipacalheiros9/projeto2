@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.StockController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Stock" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Encomendar Material"
+            onAction="#handleOrderMaterial"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Cancelar Encomenda"
+            onAction="#handleCancelarEncomenda"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Encomenda"
+            onAction="#handleListarEncomenda"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Stock"
+            onAction="#handleListarStock"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Adicionar Produto"
+            onAction="#handleAdicionarProduto"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Remover Produto"
+            onAction="#handleRemoverProduto"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Editar Produto"
+            onAction="#handleEditarProduto"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+</VBox>

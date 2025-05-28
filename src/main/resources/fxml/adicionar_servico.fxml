@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.AdicionarServicoController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Data do Serviço:" />
+    <DatePicker fx:id="dataServicoField" />
+
+    <Label text="Preço do Serviço:" />
+    <TextField fx:id="precoServicoField" promptText="Preço" />
+
+    <Label text="Estado do Serviço:" />
+    <TextField fx:id="estadoServicoField" promptText="Estado" />
+
+    <Label text="Projeto:" />
+    <ComboBox fx:id="projetoComboBox" />
+
+    <Label text="Funcionário:" />
+    <ComboBox fx:id="funcionarioComboBox" />
+
+    <Label text="Tipo de Impressão:" />
+    <ComboBox fx:id="tipoImpressaoComboBox" />
+
+    <Label text="Material a utilizar:" />
+    <ComboBox fx:id="materialComboBox" promptText="Selecione o material" />
+
+    <Label text="Quantidade:" />
+    <TextField fx:id="quantidadeMaterialField" promptText="Quantidade" />
+
+    <Button fx:id="adicionarMaterialButton"
+            text="Adicionar Material"
+            style="-fx-background-color: #3498db; -fx-text-fill: white;" />
+
+    <Label text="Materiais Selecionados:" />
+    <ListView fx:id="materiaisListView" prefHeight="100" />
+
+    <Button text="Confirmar"
+            onAction="#handleAdicionarServico"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;" />
+    <Button text="Cancelar"
+            onAction="#handleCancelar"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+
+</VBox>

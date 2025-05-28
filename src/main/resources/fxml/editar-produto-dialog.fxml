@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.EditarProdutoController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Editar Produto" style="-fx-font-size:18px; -fx-font-weight: bold;" />
+
+    <ListView fx:id="listViewProdutos" prefHeight="200" prefWidth="300" onMouseClicked="#selecionarProduto"/>
+
+    <Label text="Nome do Produto:" />
+    <TextField fx:id="nomeProdutoTextField" />
+
+    <Label text="Preço:" />
+    <TextField fx:id="precoProdutoTextField" />
+
+    <Label text="Quantidade em Stock:" />
+    <TextField fx:id="quantidadeProdutoTextField" />
+
+    <Button text="Confirmar"
+            onAction="#handleSalvarEdicao"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+
+    <Button text="Cancelar"
+            onAction="#handleCancelarEdicao"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+</VBox>

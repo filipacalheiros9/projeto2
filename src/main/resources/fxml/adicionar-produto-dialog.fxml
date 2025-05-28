@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.AdicionarProdutoController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Adicionar Produto ao Stock" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="txtNome" promptText="Nome do Material"/>
+    <TextField fx:id="txtPreco" promptText="Preço (€)"/>
+    <TextField fx:id="txtQuantidade" promptText="Quantidade em Stock"/>
+
+    <Button fx:id="btnAdicionarProduto" text="Confirmar" onAction="#guardarProduto"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+</VBox>

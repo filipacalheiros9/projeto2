@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.OrderMaterialDialogController"
+      alignment="CENTER" spacing="10"
+      style="-fx-background-color: white; -fx-padding: 20; -fx-border-color: #ccc; -fx-border-radius: 4; -fx-background-radius: 4;">
+
+    <Label text="Formulário de Encomenda" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <!-- escolha do material -->
+    <ComboBox fx:id="comboMaterial" promptText="Selecione o Material" prefWidth="200"/>
+
+    <!-- escolha do fornecedor -->
+    <ComboBox fx:id="comboFornecedor" promptText="Selecione o Fornecedor" prefWidth="200"/>
+
+    <!-- quantidade -->
+    <TextField fx:id="quantidadeField" promptText="Quantidade" prefWidth="200"/>
+
+    <!-- preço total -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Preço Total:"/>
+        <Label fx:id="totalPriceLabel" text="0.00" style="-fx-font-weight: bold;"/>
+    </HBox>
+
+    <HBox spacing="15">
+        <Button fx:id="confirmButton"
+                text="Confirmar"
+                onAction="#handleConfirmar"
+                style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 4; -fx-padding: 6 12;" />
+        <Button fx:id="cancelButton"
+                text="Cancelar"
+                onAction="#handleCancelar"
+                style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-background-radius: 4; -fx-padding: 6 12;" />
+    </HBox>
+</VBox>

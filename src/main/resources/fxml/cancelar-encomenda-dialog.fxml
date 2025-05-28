@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.CancelarEncomendaController"
+      spacing="10" style="-fx-padding:20;">
+    <Label text="Selecionar Encomenda para Cancelar:" style="-fx-font-size: 16px;"/>
+    <ComboBox fx:id="comboEncomendas" prefWidth="300"/>
+    <Button text="Confirmar"
+            onAction="#handleConfirmarCancelamento"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-padding: 6 12;"/>
+    <Button text="Cancelar" onAction="#handleCancelar" style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+
+</VBox>

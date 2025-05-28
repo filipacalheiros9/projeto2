@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.AdicionarTipoProjetoController"
+      spacing="15" style="-fx-padding:20;">
+
+    <TextField fx:id="tipoprojetoField" promptText="Digite o nome do Tipo de Projeto"
+               style="-fx-font-size:14px; -fx-padding:8 16;" />
+
+    <Button text="Confirmar" onAction="#handleSalvarTipoProjeto"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;" />
+    <Button text="Cancelar" onAction="#handleCancelar"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+
+</VBox>

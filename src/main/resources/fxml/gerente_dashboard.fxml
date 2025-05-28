@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controllers.GerenteDashboardController"
+            fx:id="mainPane">
+
+    <left>
+        <VBox spacing="10" prefWidth="200" style="-fx-background-color: #cde6fb; -fx-padding: 20;">
+            <Button fx:id="inicioButton" text="Início" onAction="#handleInicio"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="perfilButton" text="Perfil" onAction="#handlePerfil"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="funcionariosButton" text="Funcionários" onAction="#handleFuncionarios"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="stockButton" text="Stock" onAction="#handleStock"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="fornecedorButton" text="Fornecedor" onAction="#handleFornecedor"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="projetosButton" text="Projetos" onAction="#handleProjetos"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+
+            <Pane VBox.vgrow="ALWAYS"/>
+            <Button fx:id="logoutButton"
+                    text="Terminar Sessão"
+                    onAction="#logout"
+                    style="-fx-font-size: 14px; -fx-background-color: #b2ccf3; -fx-text-fill: black;" />
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="TOP_RIGHT" style="-fx-background-color: #7ba3d8; -fx-padding: 10;">
+            <ImageView fx:id="logoImage" fitWidth="50" fitHeight="50" preserveRatio="true"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox fx:id="contentArea" alignment="CENTER" spacing="20"
+              style="-fx-background-color: #ECF0F1; -fx-padding: 40;">
+        </VBox>
+    </center>
+
+</BorderPane>

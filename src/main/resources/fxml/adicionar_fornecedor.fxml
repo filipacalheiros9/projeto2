@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.AdicionarFornecedorController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Adicionar Novo Fornecedor" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="nomeField" promptText="Nome do Fornecedor"/>
+    <TextField fx:id="nifField" promptText="NIF"/>
+    <TextField fx:id="telefoneField" promptText="Telefone"/>
+    <TextField fx:id="ruaField" promptText="Rua"/>
+    <TextField fx:id="portaField" promptText="Número da Porta"/>
+    <ComboBox fx:id="codPostalComboBox" promptText="Código Postal"/>
+
+    <HBox spacing="10">
+        <Button text="Confirmar" onAction="#handleSalvar" style="-fx-background-color: #2ecc71; -fx-text-fill: white;"/>
+        <Button text="Cancelar" onAction="#handleCancelar" style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ListarPagamentosController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+
+    <TableView fx:id="pagamentosTable" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colData" text="Data" prefWidth="150"/>
+            <TableColumn fx:id="colValor" text="Valor (€)" prefWidth="100"/>
+            <TableColumn fx:id="colServico" text="Serviço" prefWidth="200"/>
+        </columns>
+    </TableView>
+
+    <Button text="Fechar" onAction="#handleFecharPopup"
+            style="-fx-padding: 6 12; -fx-background-color: #e74c3c; -fx-text-fill: white;" />
+</VBox>

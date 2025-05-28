@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.RemoverTipoProjetoController"
+      spacing="10" style="-fx-padding:20;">
+
+    <ComboBox fx:id="tipoProjetoComboBox"
+              prefWidth="300"
+              promptText="Selecione um Tipo de Projeto" />
+
+    <Button text="Confrimar"
+            fx:id="removerTipoProjetoButton"
+            onAction="#handleRemoverTipoProjeto"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;" />
+    <Button text="Fechar" onAction="#handleFechar" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" />
+
+
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ClienteController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Clientes" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Button text="Listar Projetos"
+            onAction="#handleListarProjetos"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Adicionar Serviço"
+            onAction="#handleAdicionarServico"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Remover Serviço"
+            onAction="#handleRemoverServico"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Serviços"
+            onAction="#handleListarServicos"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Registar Pagamento"
+            onAction="#handleRegistarPagamento"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+    <Button text="Listar Pagamentos"
+            onAction="#handleListarPagamentos"
+            style="-fx-font-size:14px; -fx-padding:8 16; -fx-background-color: #7ba3d8; -fx-text-fill: white;" />
+
+</VBox>

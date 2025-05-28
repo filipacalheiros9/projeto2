@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.controllers.RemoverProdutoController">
+    <ListView fx:id="listViewProdutos" prefHeight="200" prefWidth="300"/>
+    <Button text="Confirmar" onAction="#removerProduto"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white;" />
+
+    <Button text="Cancelar" onAction="#fecharJanela"
+            style="-fx-background-color: #e74c3c; -fx-text-fill: white;"/>
+</VBox>
+

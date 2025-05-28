@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controllers.FuncionarioDashboardController"
+            fx:id="mainPane">
+
+    <left>
+        <VBox spacing="10" prefWidth="200" style="-fx-background-color: #cde6fb; -fx-padding: 20;">
+            <Button fx:id="inicioButton" text="Início" onAction="#handleInicio"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="stockButton" text="Stock" onAction="#handleStock"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+            <Button fx:id="clienteButton" text="Cliente" onAction="#handleCliente"
+                    style="-fx-font-size: 14px; -fx-background-color: transparent; -fx-text-fill: black;" />
+
+            <Pane VBox.vgrow="ALWAYS"/>
+            <Button fx:id="logoutButton"
+                    text="Terminar Sessão"
+                    onAction="#logout"
+                    style="-fx-font-size: 14px; -fx-background-color: #b2ccf3; -fx-text-fill: black;" />
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="TOP_RIGHT" style="-fx-background-color: #7ba3d8; -fx-padding: 10;">
+            <ImageView fx:id="logoImage" fitWidth="50" fitHeight="50" preserveRatio="true"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox fx:id="contentArea" alignment="CENTER" spacing="20"
+              style="-fx-background-color: #ECF0F1; -fx-padding: 40;">
+        </VBox>
+    </center>
+</BorderPane>

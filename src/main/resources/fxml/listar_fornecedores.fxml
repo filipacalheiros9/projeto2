@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controllers.ListarFornecedoresController"
+      spacing="10" style="-fx-padding:20;">
+
+    <Label text="Lista de Fornecedores" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TableView fx:id="fornecedoresTable" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="nomeCol" text="Nome" prefWidth="150"/>
+            <TableColumn fx:id="nifCol" text="NIF" prefWidth="100"/>
+            <TableColumn fx:id="telefoneCol" text="Telefone" prefWidth="100"/>
+            <TableColumn fx:id="ruaCol" text="Rua" prefWidth="100"/>
+            <TableColumn fx:id="portaCol" text="Porta" prefWidth="50"/>
+            <TableColumn fx:id="codPostalCol" text="Código Postal" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Fechar" onAction="#handleFechar"
+            style="-fx-padding: 6 12; -fx-background-color: #e74c3c; -fx-text-fill: white;" />
+</VBox>
