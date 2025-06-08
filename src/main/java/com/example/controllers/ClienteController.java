@@ -76,6 +76,25 @@ public class ClienteController {
         }
     }
 
+    @FXML
+    public void handleEditarServico() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/editar-servico.fxml"));
+            loader.setControllerFactory(AppContextProvider.getApplicationContext()::getBean);
+            Parent root = loader.load();
+
+            Stage popup = new Stage();
+            popup.initModality(Modality.APPLICATION_MODAL);
+            popup.setTitle("Editar Serviço");
+            popup.setScene(new Scene(root));
+            popup.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+            showAlert("Erro", "Erro ao abrir a janela de edição de serviço: " + e.getMessage(), Alert.AlertType.ERROR);
+        }
+    }
+
+
     public void handleListarServicos() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/listar_servicos.fxml"));
