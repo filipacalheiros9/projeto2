@@ -1,4 +1,4 @@
-# Projeto_II
+# Projeto_II_desktop
 
 Aplicação desktop para gestão operacional de uma gráfica, construída com **JavaFX** (interface) e **Spring Boot + Spring Data JPA** (lógica e persistência), usando **PostgreSQL**.
 
